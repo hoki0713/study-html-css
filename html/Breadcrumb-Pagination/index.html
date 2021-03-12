@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breadcrump &amp; Pagination</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="breadcrumb">
+      <a
+        href="https://github.com/hoki0713"
+        aria-label="Go to hoki0713 profile page"
+        >hoki0713</a
+      >
+      <a
+        href="https://github.com/hoki0713/study-html-css"
+        aria-label="Go to study-html-css repository page"
+        >study-html-css</a
+      >
+    </div>
+    <!-- WAI-ARIA
+    스크린 리더로 화면을 이용해야하는 사람들을 위해서
+    더 적절한 설명을 제공해주기위해 aria-label을 사용한다.
+    그러면 스크린리더에서 a링크 사이의 텍스트 대신 해당 내용을 읽어준다. -->
+    <div class="pagination">
+      <a href="#" aria-label="Go to previous page" class="disabled">Previous</a>
+      <ol>
+        <li class="current-page">
+          <a href="#" aria-label="Current page. Go to page 1">1</a>
+        </li>
+        <li>
+          <a href="#" aria-label="Go to page 2">2</a>
+        </li>
+        <li>
+          <a href="#" aria-label="Go to page 3">3</a>
+        </li>
+        <li>
+          <a href="#" aria-label="Go to page 4">4</a>
+        </li>
+        <li>
+          <a href="#" aria-label="Go to page 5">5</a>
+        </li>
+        <li>
+          <button type="button" disabled>...</button>
+        </li>
+        <li>
+          <a href="#" aria-label="Go to page 6">6</a>
+        </li>
+        <li>
+          <a href="#" aria-label="Go to page 7">7</a>
+        </li>
+        <li>
+          <a href="#" aria-label="Go to page 8">8</a>
+        </li>
+        <li>
+          <a href="#" aria-label="Go to page 9">9</a>
+        </li>
+      </ol>
+      <a href="#" aria-label="Go to next page">Next</a>
+    </div>
+  </body>
+</html>
